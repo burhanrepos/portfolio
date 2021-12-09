@@ -1,38 +1,149 @@
-.App {
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  max-width: 100vw;
+  height: 100;
+  max-height: fi;
+}
+/* Navbar */
+.home__header{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0,0,0,.9);
+  position: fixed;
+  z-index: 99;
+}
+.item{
+  background-image: url("./images/img-1.png");
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+.item::after{
+  content: '';
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: -1;
+
+}
+
+.home__headerRight{
+  display: flex;
+  justify-content:  center;
+}
+.home__headerRight a{
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-property: color;
+  transition-duration: 1s;
+  font-size: medium;
+  color: blanchedalmond;
+  margin-left: 10%;
+}
+.home__headerRight a:hover{
+  color: crimson;
+}
+.menu{
+  background-color: rgba(0,0,0,.7);
+}
+/* NavBar Ends */
+
+/* Brand Name */
+.brand__name{
+  color: blanchedalmond;
+  font-size: xx-large;
+}
+.brand__name::first-letter{
+  color: crimson;
+}
+/* Buttons */
+.button{
+  width: 150px;
+  height: 50px;
+  border: 2.5px solid crimson;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  color:crimson;
+  font-size: 110%;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: background-color .5s;
+  transition: color .5s;
+  margin-bottom: 10%;
+}
+.button:hover{
+  background-color:crimson;
+  color:white;
+
+  opacity: .9;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+/* Sections Names */
+.section__title{
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section__title span{
+  color: crimson;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Footer */
+.Footer__bar{
+  width: 100%;
+  max-width: 100vw;
+  height: 30vh;
+  background-color: rgba(0,0,0,.9);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: whitesmoke;
 }
-
-.App-link {
-  color: #61dafb;
+.Footer__bar h3{
+  margin-bottom: 2.5%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ @media only screen and (max-width:600px){
+  .section__title{
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    font-size: 1.2rem;
   }
-  to {
-    transform: rotate(360deg);
+  .brand__name{
+    font-size: 1.7rem;
   }
-}
+ }
+ /* .item{
+    background-image: url("./images/img-1.png");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+  }
+  .item::after{
+    content: '';
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: -1;
+  
+  }
+} */
+ 

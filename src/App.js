@@ -1,25 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Services from './pages/Services';
+import Projects from "./pages/Projects";
+import Contact from './pages/Contact';
+import About from './pages/About';
+// import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  //  <Switch>
+  //     <Route exact path="/">
+  //       <About />
+  //     </Route>
+
+
+  //     <Route path="/projects">
+  //       <Projects /> 
+  //      </Route>
+
+
+  //     <Route path="/services">
+  //       <Services />
+  //     </Route>
+
+
+  //     <Route path="/contact">
+  //       <Contact />
+  //     </Route>
+
+  //   </Switch>
+  <Router>
+      <Routes>
+        <Route path="/contact" caseSensitive={false} element={<Contact />} />
+        <Route path="/projects" caseSensitive={false} element={<Projects />} />
+        <Route path="/services" caseSensitive={false} element={<Services />} />
+        <Route path="/" caseSensitive={false} element={<About />} />
+      </Routes>
+    </Router> 
   );
 }
 
 export default App;
+
