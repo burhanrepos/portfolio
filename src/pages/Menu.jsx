@@ -13,10 +13,10 @@ const Menu = ({ page }) => {
                 
                 <div className={showNavBar ? "desktop-link mobile-link" : "desktop-link"}>
                     {/* <Link to="/" style={{ color: page === "home" ? "crimson" : "" }}>Home</Link> */}
-                    <Link to="/portfolio" style={{ color: page === "about" ? "crimson" : "" }}>About</Link>
-                    <Link to="/portfolio/services" style={{ color: page === "services" ? "crimson" : "" }}>Services</Link>
-                    <Link to="/portfolio/projects" style={{ color: page === "projects" ? "crimson" : "" }}>Projects</Link>
-                    <Link to="/portfolio/contact" style={{ color: page === "contact" ? "crimson" : "" }}>Contact</Link>
+                    <a href="/portfolio" style={{ color: page === "about" ? "crimson" : "" }}>About</a>
+                    <a href="/portfolio/services" style={{ color: page === "services" ? "crimson" : "" }}>Services</a>
+                    <a href="/portfolio/projects" style={{ color: page === "projects" ? "crimson" : "" }}>Projects</a>
+                    <a href="/portfolio/contact" style={{ color: page === "contact" ? "crimson" : "" }}>Contact</a>
                 </div>
                 <div className="hamburger-menu">
                 <a href="#" onClick={() => setNavBar(!showNavBar)}>
