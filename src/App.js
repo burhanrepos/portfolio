@@ -15,11 +15,11 @@ const App = () => {
       <Switch>
         <Route exact path="/portfolio" component={About} />
 
-        <Route path="/portfolio/projects" component={Projects} />
+        <Route path="/portfolio/projects" exact component={Projects} />
 
-        <Route path="/portfolio/services" component={Services} />
+        <Route path="/portfolio/services" exact component={Services} />
 
-        <Route path="/portfolio/contact" component={Contact} />
+        <Route path="/portfolio/contact" exact component={Contact} />
       </Switch>
     </Router>
 
