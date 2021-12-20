@@ -32,10 +32,10 @@ const App = () => {
   //   </Switch>
   <Router>
       <Routes>
-        <Route path="/contact" caseSensitive={false} element={<Contact />} />
-        <Route path="/projects" caseSensitive={false} element={<Projects />} />
-        <Route path="/services" caseSensitive={false} element={<Services />} />
-        <Route path="/" caseSensitive={false} element={<About />} />
+        <Route path="/portfolio/contact" caseSensitive={false} element={<Contact />} />
+        <Route path="/portfolio/projects" caseSensitive={false} element={<Projects />} />
+        <Route path="/portfolio/services" caseSensitive={false} element={<Services />} />
+        <Route path="/portfolio" caseSensitive={false} element={<About />} />
       </Routes>
     </Router> 
   );
