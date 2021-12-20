@@ -11,13 +11,21 @@ const App = () => {
 
     <Router>
     <Switch>
-      <Route exact path="/" component={About} />
+      <Route exact path="/portfolio">
+        <About/>
+      </Route>
 
-      <Route path="/projects" exact component={Projects} />
+      <Route path="/portfolio/projects">
+      <Projects/>
+      </Route> 
 
-      <Route path="/services" exact component={Services} />
+      <Route path="/portfolio/services">
+        <Services/>
+      </Route>
 
-      <Route path="/contact" exact component={Contact} />
+      <Route path="/portfolio/contact">
+        <Contact/>
+      </Route>
     </Switch>
   </Router>   
 
