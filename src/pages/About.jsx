@@ -39,7 +39,7 @@ const About = () => {
               <li style={{ fontWeight: "bold" }}>Bachelor</li>
               <p style={{ fontSize: "100%", textAlign: "justify" }}>
                 2018- Pursuing Bachelor's in Computer Sciences from <b>IIUI</b>
-                (7th Semester with CGPA: 3.89).
+                (8th Semester with CGPA: 3.85).
               </p>
               <li style={{ fontWeight: "bold" }}>Intermediate(ICS)</li>
               <p style={{ fontSize: "100%", textAlign: "justify" }}>
